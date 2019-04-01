@@ -1,0 +1,5 @@
+<div *ngIf="wiadomosciService.wiadomosci.length">
+  <h2>Wiadomosci</h2>
+  <button class="clear"
+    (click) = "wiadomosciService.clear()">clear</button>
+<div *ngFor="let wiadomosc of wiadomosciService.wiadomosci"> {{wiadomosc}}</div>

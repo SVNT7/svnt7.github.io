@@ -1,0 +1,11 @@
+<h3>Najlepsi bohaterowie</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let bohater of bohaterzy" class="col-1-4"
+    routerLink="/szczegoly/{{bohater.id}}">
+    <div class="module bohater">
+      <h4>{{bohater.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-wyszukaj-bohatera></app-wyszukaj-bohatera>
